@@ -126,3 +126,18 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+### Sections
+
+- Navigation
+- Hero
+- Features
+- How it works
+- Diets
+- Meals
+- Call to action (Free sample meal, sign up form)
+- Pricing plans
+- Gallery
+- Testimonials
+- Featured in
+- Footer
