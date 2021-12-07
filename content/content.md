@@ -131,13 +131,12 @@ Privacy & terms
 
 - Navigation
 - Hero
+- Featured in
 - Features
 - How it works
-- Diets
-- Meals
-- Call to action (Free sample meal, sign up form)
-- Pricing plans
+- Meals (and list of diets)
 - Gallery
 - Testimonials
-- Featured in
+- Pricing plans
+- Call to action (Free sample meal, sign up form)
 - Footer
