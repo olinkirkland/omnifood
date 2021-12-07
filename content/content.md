@@ -129,14 +129,12 @@ Privacy & terms
 
 ### Sections
 
-- Navigation
+- Logo + Navigation
 - Hero
 - Featured in
-- Features
 - How it works
 - Meals (and list of diets)
-- Gallery
-- Testimonials
-- Pricing plans
+- Testimonials + gallery
+- Pricing plans + features
 - Call to action (Free sample meal, sign up form)
 - Footer
