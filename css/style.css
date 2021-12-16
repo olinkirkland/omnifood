@@ -42,7 +42,7 @@ Default: 1
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
@@ -52,11 +52,7 @@ body {
   color: #555;
 }
 
-.test {
-    max-width: 50rem;
-    background-color: red;
-    padding: 4rem;
-    font-size: 2rem;
-    color: white;
-    /* 1rem = 16px -> 50rem = 800px */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
