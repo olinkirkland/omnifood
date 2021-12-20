@@ -88,7 +88,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   transition-duration: 0.3s;
 }
 
@@ -119,4 +119,10 @@ body {
 
 .hero-img {
   width: 100%;
+}
+
+/* UTILITIES */
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
