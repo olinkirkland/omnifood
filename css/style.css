@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -112,6 +112,31 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.container {
+  /* Define the viewport with this container */
+  /* 120rem is a standard used for the browser's width */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr); /* same as 1fr, 1fr */
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr); /* same as 1fr, 1fr */
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr); /* same as 1fr, 1fr */
+} 
+
 /* ************************************ */
 /* HEADER */
 /* ************************************ */
@@ -129,7 +154,7 @@ body {
 }
 
 .logo {
-  height: 2.2rem; 
+  height: 2.2rem;
 }
 
 /* ************************************ */
@@ -137,13 +162,13 @@ body {
 /* ************************************ */
 
 .main-nav-list {
- list-style: none;
- display: flex;
- gap: 3.2rem;
- align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
 }
 
-.main-nav-link:link, 
+.main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
   color: #333;
@@ -154,7 +179,7 @@ body {
 }
 
 .main-nav-link:hover,
-.main-nav-link:active { 
+.main-nav-link:active {
   color: #cf711f;
 }
 
@@ -177,13 +202,13 @@ body {
 
 .section-hero {
   background-color: #fdf2e9;
-  padding: 4.8rem 0  9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
   max-width: 130rem;
   margin: 0 auto;
-  padding:  3.2rem;
+  padding: 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
@@ -229,5 +254,17 @@ body {
 }
 
 .delivered-text span {
-  color: #cf711f  ; 
+  color: #cf711f;
+}
+
+/* ************************************ */
+/* HOW IT WORKS SECTION */
+/* ************************************ */
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-img {
+  width: 50%;
 }
