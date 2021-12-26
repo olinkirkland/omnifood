@@ -174,8 +174,8 @@
 }
 
 .step-img-box::after {
-  width: 50%;
-  padding-bottom: 50%;
+  width: 45%;
+  padding-bottom: 45%;
   background-color: #fae5d3;
   z-index: -1;
 }
