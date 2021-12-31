@@ -53,7 +53,7 @@ html {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -135,6 +135,22 @@ strong {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
@@ -144,7 +160,7 @@ strong {
   /* 120rem is a standard used for the browser's width */
   max-width: 120rem;
   margin: 0 auto;
-  padding: 3.2rem 0;
+  /* padding: 3.2rem 0; */
 }
 
 .grid {
@@ -167,4 +183,8 @@ strong {
 
 .grid--center-v {
   align-items: center;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
 }
