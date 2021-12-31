@@ -32,7 +32,7 @@ Paragraph Default: 1.6
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
-Default: 9px
+Default: 9px, 11px
 
 --- 07 WHITESPACE
 
@@ -57,6 +57,10 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+strong {
+  font-weight: 500;
 }
 
 /* ************************************ */
