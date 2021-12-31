@@ -184,7 +184,7 @@
 /* cannot use 'before' more than once */
 .step-img-box::before,
 .step-img-box::after {
-  content: '';
+  content: "";
   display: block;
   border-radius: 50%;
   position: absolute;
@@ -225,6 +225,12 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  transform: translate(0, -1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);  
 }
 
 .meal-content {
@@ -289,7 +295,6 @@
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
-
 }
 
 .meal-img {
