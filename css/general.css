@@ -191,15 +191,19 @@ strong {
 }
 
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr); /* same as 1fr, 1fr */
+  grid-template-columns: repeat(2, 1fr); /* same as 1fr 1fr */
 }
 
 .grid--3-cols {
-  grid-template-columns: repeat(3, 1fr); /* same as 1fr, 1fr */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid--4-cols {
-  grid-template-columns: repeat(4, 1fr); /* same as 1fr, 1fr */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -226,7 +230,7 @@ strong {
   color: #e67e22;
 }
 
-*:focus{
+*:focus {
   outline: none;
   /* outline: 4px dashed #e67e22;
   outline-offset: 8px; */
