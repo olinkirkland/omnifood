@@ -98,16 +98,24 @@ strong {
   margin-bottom: 1.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  font-size: 2rem;
+
+  font-size: 1.8rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
   text-decoration: none;
   transition-property: background-color, box-shadow;
   transition-duration: 0.3s;
+
+  /* Only necessary for .btn, not :link or :visited */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -133,6 +141,19 @@ strong {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover,
+.btn--form:active {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -203,6 +224,14 @@ strong {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus{
+  outline: none;
+  /* outline: 4px dashed #e67e22;
+  outline-offset: 8px; */
+
+  box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.6);
 }
 
 /* HELPER/SETTING CLASSES */
