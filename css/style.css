@@ -25,8 +25,8 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
   align-items: center;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -638,7 +638,4 @@
 .footer-link:hover,
 .footer-link:active {
   color: #555;
-}
-
-.nav-col {
 }
