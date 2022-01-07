@@ -69,7 +69,7 @@ instead, 1rem = 1em = 16px */
 /* BELOW 900px (TABLETS) */
 /**************************************/
 
-/* 944px / 16 = 59 */
+/* 944px / 16px = 59 */
 @media (max-width: 59em) {
   html {
     /* 8px / 16px = 50% */
@@ -185,6 +185,125 @@ instead, 1rem = 1em = 16px */
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+  }
+}
+
+/**************************************/
+/* BELOW 704px (SMALL TABLETS) */
+/**************************************/
+
+/* 704px / 16px = 44 */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .pricing-plan--complete::after {
+    top: 6%;
+    right: -24%;
+  }
+
+  /* FOOTER */
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
+
+/**************************************/
+/* BELOW 544px (SMALL TABLETS) */
+/**************************************/
+
+/* 544px / 16px = 34 */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
   }
 }
 
