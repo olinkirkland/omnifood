@@ -13,6 +13,47 @@ btnNavEl.addEventListener("click", function () {
 });
 
 ///////////////////////////////////////////////////////////
+// Smooth scrolling animation
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    headerEl.classList.remove("nav-open");
+
+    if (href === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      console.log(sectionEl);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+///////////////////////////////////////////////////////////
+// Sticky header
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const entry = entries[0];
+    if (!entry.isIntersecting) {
+      document.querySelector("body").classList.add("sticky");
+    } else {
+      document.querySelector("body").classList.remove("sticky");
+    }
+  },
+  {
+    root: null, // Target is observed relative to the root
+    threshold: 0, // Get an event as soon as the hero section moves completely out of the viewport
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
+
+///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");

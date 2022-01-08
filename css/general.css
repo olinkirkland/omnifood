@@ -51,6 +51,9 @@ Default: 9px, 11px
 html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+
+  /* Doesn't work in Safari/Microsoft Edge */
+  /* scroll-behavior: smooth; */
 }
 
 body {
